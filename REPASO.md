@@ -15,8 +15,15 @@ https://www.itsolutionstuff.com/post/laravel-8-install-bootstrap-example-tutoria
 
 
 - Para gestionar una tabla debemos:
-    - Crear una migración (opcional)
-    - Crear un seeder (opcional)
-    - Crear un modelo
-    - Crear un controlador
-    - Crear una política (para autorización)
+  - Crear una migración (opcional)
+    php artisan make:migration create_product_types_table
+  - Crear un seeder (opcional)
+    php artisan make:seeder ProductTypeSeeder
+  - Crear un modelo
+    php artisan make:model ProductType
+  - Crear un controlador
+    php artisan make:controller ProductTypeController
+    php artisan make:controller ProductTypeController --resource
+  - Crear una política (para autorización)
+    php artisan make:policy ProductTypePolicy --model=ProductType
+
