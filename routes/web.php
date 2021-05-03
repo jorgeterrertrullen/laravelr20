@@ -33,3 +33,6 @@ Route::get('/prueba/potencias2', [PruebaController::class, 'potencias2']);
 
 //post, delete, put, patch
 //resource --> se traduce por 7 rutas
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
