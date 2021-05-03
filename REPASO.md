@@ -1,7 +1,6 @@
 # Modelos/Tablas que vamos a usar
 - ProductTypes(id, name)
 - Product(id, name, price, product_type_id, description)
-- 
 - Task(id, name);
 - Job(id, date, user_id);
 
@@ -45,3 +44,6 @@ https://www.itsolutionstuff.com/post/laravel-8-install-bootstrap-example-tutoria
   - Crear una política (para autorización)
     php artisan make:policy ProductTypePolicy --model=ProductType
 
+
+ ## TAREA PARA CASA
+ - Crear migraciones, modelo, seeder y controlador con método index de las tablas indicadas arriba del todo. La vista index la tenéis disponible en este repositorio.
