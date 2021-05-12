@@ -47,3 +47,21 @@ https://www.itsolutionstuff.com/post/laravel-8-install-bootstrap-example-tutoria
 
  ## TAREA PARA CASA
  - Crear migraciones, modelo, seeder y controlador con método index de las tablas indicadas arriba del todo. La vista index la tenéis disponible en este repositorio.
+
+
+
+
+
+# Repaso 02. 12/mayo
+
+  - Revisar index. 
+    extend layout en blade
+  - Delete: form para falsear DELETE
+  - edit/update
+
+  - (7)Rutas resource
+       REST
+      /producttypes  index, store(post)
+      /producttypes/{id}  show, update, delete
+      /producttypes/create
+      /producttypes/{id}/edit
