@@ -39,6 +39,11 @@ class ProductTypeController extends Controller
      */
     public function store(Request $request)
     {
+        $rules = [
+            'name' => 'required|string|unique:product_types,name|max:50'
+        ];
+        $this->validate($request, $rules);
+
         //metodo 1 más rudimentario:
         $producttype = new ProductType;
         $producttype->name = $request->name;
@@ -85,10 +90,15 @@ class ProductTypeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // return "actualizar $id";
-
         //buscar
         $producttype = ProductType::find($id);
+
+        $rules = [
+            'name' => 'required|string|max:50|unique:product_types,name,' . $id
+        ];
+        $this->validate($request, $rules);
+        // return "actualizar $id";
+
         //modificar
         $producttype->name = $request->name;
         //grabar en bbdd
