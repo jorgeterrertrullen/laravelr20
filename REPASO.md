@@ -4,7 +4,7 @@
   product_type_id: usar select en los formularios
   usar relaciones para mostrar nombre en vez de id en el index
 - Task(id, name);
-- Job(id, date, user_id*);
+- Job(id, date, user_id*); tipo date
 
 # Repaso 01
 - Día del examen MVC
@@ -79,4 +79,8 @@ https://www.itsolutionstuff.com/post/laravel-8-install-bootstrap-example-tutoria
   - Validación
   - Select en formularios
   - Relaciones BelongsTo, HasMany
-  - Políticas ¿?
+  - Middleware Auth
+
+# PENDIENTE PARA API
+  - Sesiones
+  - Políticas 
